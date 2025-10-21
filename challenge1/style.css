@@ -3,39 +3,31 @@
   box-sizing: border-box;
   margin: 0;
 }
-html, body {
+html, body, content {
   width: 100vw;
   height: 100vh; 
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-}
-
-body { 
   background: hsl(212, 45%, 89%);
 }
 
-container {
-
-  justify-content: inherit;
+.container {
+  height: unset;
   flex-flow: column nowrap;
-  width: calc(0.9 * 375px);
+  width: 320px;
   max-width: 1440px;
   background: white;
-  padding: 20px;
-  gap: 10px;
-  border-radius: 20px;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 18px;
+  box-shadow: 0 15px 20px rgb(23, 15, 5, .06);
 }
-
 
 img {
   width: 100%;
-  border-radius: inherit;
-}
-
-content {
-  padding: 10px;
+  border-radius: 10px;
 }
 
 .headp {
@@ -43,18 +35,27 @@ content {
   text-align: center;
   color: hsl(218, 44%, 22%);
 }
+
 .para {
+  padding: 0 15px;
   font-size: 15px;
   font-weight: normal;
-  margin-top : 10px;
+  margin-top: 15px;
   color: hsl(216, 15%, 48%);
 }
 
 .attribution, p {
-  font-size: 11px; 
+  font-size: 9px; 
   text-align: center; 
   color: hsl(216, 15%, 48%);
 }
-
-.attribution a { color: hsl(228, 45%, 44%);
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-size: 11px;
+  transition: all linear .3s;
+  &:hover {
+    color: grey;
+    font-size: 14px;
+  }
 }
