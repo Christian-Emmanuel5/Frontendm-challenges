@@ -13,7 +13,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- [Solution URL](https://github.com/owiocho/Frontendm-challenges/tree/main/challenge1)
+- [Solution URL](https://github.com/Christian-Emmanuel5/Frontendm-challenges/tree/main/challenge1)
 - [Live site](https://frontendm-challenges.vercel.app/)
 
 ### Built with
