@@ -22,7 +22,7 @@ html, body, content {
   padding: 15px;
   gap: 15px;
   border-radius: 18px;
-  box-shadow: 0 15px 20px rgb(23, 15, 5, .06);
+  box-shadow: 0 23px 24px rgb(23, 15, 5, .06);
 }
 
 img {

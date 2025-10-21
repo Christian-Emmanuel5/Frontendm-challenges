@@ -5,14 +5,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
   - [Built with](#built-with)
+  - [Links](#Links)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
   - [Appreciations](#Appreciations)
-
+  
 
 ### Links
 
-- [Solution URL](https://github.com/owiocho/Frontendm-challenges/challenge1)
+- [Solution URL](https://github.com/owiocho/Frontendm-challenges/tree/main/challenge1)
 - [Live site](https://frontendm-challenges.vercel.app/)
 
 ### Built with
@@ -44,7 +45,8 @@ Helpful tools:
 }
 ```
 Though supported in modern browsers not ideal for old browsers when considering compactibility.
-3. First deployment ever. I learned how to handel 404 errors due to directory levels and file locations
+
+3. First deployment ever. I learned how to handle 404 errors due to directory levels and file locations.
 
 
 ### Useful resources
@@ -52,7 +54,7 @@ Though supported in modern browsers not ideal for old browsers when considering 
 - [mdn css box-shadow](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow) - Handy for a quick refresher.
 - [git-fundamentals](https://www.epicweb.dev/tutorials/git-fundamentals/commands/intro-to-git-fundamentals) - Helped me to understand git better.
 - [The Markdown Guide](https://www.markdownguide.org/) - To learn what markdown files are and how to write them.
-- [Chatgpt](https://www.chatgpt.com) - Off course our handy tool for quick refreshers and everyday tasks 😉.
+- [Chatgpt](https://www.chatgpt.com) - Of course our handy tool for quick refreshers and everyday tasks 😉.
 
 
 ### Appreciations
