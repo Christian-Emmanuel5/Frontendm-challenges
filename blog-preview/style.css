@@ -1,6 +1,4 @@
-:root {
-    --font-size: clamp(13px, calc((160/35) * 1vw), 35px);
-}
+
 
 @font-face {
     font-family: "Figtree";
@@ -11,17 +9,31 @@
     font-weight: 400;
 }
 
-html {
-    font-size: 16px;
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
 }
+
+html{
+    font-size: clamp(13px, 16px, 18px);
+    width: 1vw;
+    height: 1vh;
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
     position: absolute;
     transform: translate(50%, -50%);
     top: 50%;
     right: 50%;
-    background: violet;
-    width: 100vw;
-    height: 100vh;
-    font-size: var(--font-size);
+    background: hsl(47, 88%, 63%);
+    
+}
+
+section {
+    border: solid;
+    background: white;
 }
 
