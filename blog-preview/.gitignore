@@ -5,4 +5,5 @@
 .prettierignore
 design
 *.jpg
-style-guide.md
+*.md
+Preview.png
