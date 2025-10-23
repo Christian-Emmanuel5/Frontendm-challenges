@@ -33,7 +33,7 @@ Users should be able to:
 - [Solution](https://github.com/Christian-Emmanuel5/Frontendm-challenges/tree/main/blog-preview)
 - [Live site](https://frontendm-challenge2-4dhwd4y0f-owiochos-projects.vercel.app/)
 
-## My progress
+## My process
 
 Getting better in positioning elements and Responsive designs.
 
@@ -47,7 +47,7 @@ Getting better in positioning elements and Responsive designs.
 
 ### What I learned
 
-The Css clamp(). It's a game changer for responsive designs.
+The Css clamp() function. It's a game changer for responsive designs.
 ```css
 .element {
   width: clamp(<min-value>, <desired-value>, <max-value>);
