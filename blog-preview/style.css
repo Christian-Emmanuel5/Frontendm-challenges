@@ -20,7 +20,7 @@ html{
     font-size: clamp(11px, 2vw, 16px);
     width: 100vw;
     height: 100vh;
-    font-family: "Figtree", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -31,36 +31,94 @@ body {
     margin: 0 auto;
 }
 
+/* style for box-contents */
 section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 15px ;
     border: solid 1px;
     background: white;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0.5rem 0.5rem  hsl(0, 0%, 7%);
-    max-width: 387px;
+    width: clamp(320px,50vw,387px);
 }
 
 .header {
-  max-width: 100%;
+  width: 100%;
   border-radius: 12px;
+}
+
+.state > span {
+    background: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+ .state > p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.state {
+    margin-top: 10px;
+}
+
+article {
+    display: inherit;
+    flex-flow: column nowrap;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+article > p {
+    color: hsl(0, 0%, 42%)
+}
+
+
+article > a {
+    color: unset;
+    text-decoration: none;
 }
 
 .user {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     gap: 10px;
     font-weight: 700;
-    & img {
+}
+
+.user > img {
         max-width: 10%;
-    }
+}
+
+/*for footer nav*/
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+    width: 100%;
+    background:  rgb(200, 200, 200, .4);
+    border-radius: 50px 50px 0 0;
 }
 
 .attribution {
   text-align: center;
+  color:hsl(0, 0%, 42%);
+  font-size: 0.7rem;
 }
 
+.attribution > a:link {
+    text-decoration: none;
+    color: rgb(137, 83, 83);
+    font-size: 0.8rem;
+}
+
+/* Active state design*/
+
+a:hover, a:focus {
+    color: hsl(47, 88%, 63%);
+}
