@@ -6,3 +6,5 @@
 .prettierignore
 design
 style-guide.md
+.gitignore
+preview.jpg
