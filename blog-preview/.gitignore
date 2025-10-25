@@ -4,6 +4,4 @@
 .DS_Store
 .prettierignore
 design
-*.jpg
-*.md
-Preview.png
+style-guide.md

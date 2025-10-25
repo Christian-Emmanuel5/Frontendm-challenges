@@ -15,20 +15,16 @@
     border: 0;
 }
 
-html{
+html, body{
     display: flex;
-    font-size: clamp(11px, 2vw, 16px);
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    font-size: clamp(14px, 3.5vw, 16px);
     width: 100vw;
     height: 100vh;
     font-family: "Figtree", Arial, Helvetica, sans-serif;
-}
-
-body {
-    display: grid;
-    grid-template: 1fr / 1fr;
     background: hsl(47, 88%, 63%);
-    align-self: center;
-    margin: 0 auto;
 }
 
 /* style for box-contents */
@@ -40,12 +36,13 @@ section {
     border: solid 1px;
     background: white;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0.5rem 0.5rem  hsl(0, 0%, 7%);
-    width: clamp(320px,50vw,387px);
+    line-height: 1.5;
+    width: clamp(320px,88vw,387px);
 }
 
-.header {
+.illustration {
   width: 100%;
   border-radius: 12px;
 }
@@ -53,11 +50,11 @@ section {
 .state > span {
     background: hsl(47, 88%, 63%);
     border-radius: 4px;
-    padding: 3px 8px;
+    padding: 5px 10px;
     font-weight: bold;
 }
  .state > p {
-    margin-top: 15px;
+    margin-top: 10px;
     font-weight: 500;
 }
 
@@ -68,21 +65,22 @@ section {
 article {
     display: inherit;
     flex-flow: column nowrap;
-    gap: 18px;
+    gap: 15px;
     justify-content: space-between;
 }
 
 article > p {
-    color: hsl(0, 0%, 42%)
+    color: hsl(0, 0%, 42%);
 }
 
 
-article > a {
+a:link {
     color: unset;
     text-decoration: none;
 }
 
 .user {
+    margin-top: 10px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -91,18 +89,15 @@ article > a {
 }
 
 .user > img {
-        max-width: 10%;
+        max-width: 12%;
 }
 
 /*for footer nav*/
 footer{
     position: fixed;
     bottom: 0;
-    right: 50%;
-    transform: translate(50%);
     width: 100%;
-    background: white; /* rgb(200, 200, 200, .4);*/
-    border-radius: 50px 50px 0 0;
+    background: white;
 }
 
 .attribution {
@@ -112,7 +107,6 @@ footer{
 }
 
 .attribution > a:link {
-    text-decoration: none;
     color: rgb(137, 83, 83);
     font: 0.8rem;
 }

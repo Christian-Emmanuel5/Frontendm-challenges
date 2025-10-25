@@ -2,6 +2,7 @@
     font-family: "Inter";
     src: local("Inter"),
     url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    font-weight: 300;
 }
 
 * {
@@ -24,17 +25,18 @@ body {
     flex-flow: column nowrap;
     align-items: center;
 }
+
 .container {
-    width: 375px;
+    --minmax-width: clamp(320px, 60vw, 385px);
+    width: var(--minmax-width);
+    max-width:385px;
     background: hsl(0, 0%, 12%);
-    height: 600px;
     border-radius: 15px;
-    gap: 15px;
-    padding: 40px;
+    gap: 25px;
+    padding: calc(0.1 * var(--minmax-width));
 }
 
 .bio {
-    border: solid;
     gap: 10px;
 }
 
@@ -42,4 +44,47 @@ body {
     border-radius: 100%;
     width: 100px;
     margin: 0 0 15px 0;
+}
+
+.bio h3 {
+    color: hsl(75, 94%, 57%);
+}
+
+.bio p{
+    margin-top: 15px;
+}
+
+.social-links {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.social-links .link {
+    background: hsl(0, 0%, 20%);
+    color: unset;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.link:hover, .link:active {
+    background: hsl(75, 94%, 57%);
+    color: initial;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: hsl(0, 0%, 60%);
+}
+
+footer .attribution a {
+    font-weight: 15px;
+    color: hsl(0, 0%, 80%);
 }
