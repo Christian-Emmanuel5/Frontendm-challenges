@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Outfit";
+  src: Local("Outfit"),
+  url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Young-Serif";
+  src: local("Young-Serif"),
+  url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+* {
+margin: 0;
+box-sizing: border-box;
+border: 0;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  width: 100vw;
+  color: hsl(30, 10%, 34%);
+  font-size: clamp(14px, 3.5vw, 16px);
+  line-height: 1.5;
+  font-family: "Outfit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: clamp(320px, 90%, 600px);
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+  background: hsl(0, 0%, 100%);
+}
+
+img {
+  border-radius: inherit;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Young-Serif";
+  color: initial;
+}
+
+
+li {
+padding: 5px 15px;
+margin-left: -20px;
+}
+
+.cook-time {
+  padding: inherit;
+  background: hsl(330, 100%, 98%);
+  & h3 {
+    color: hsl(332, 51%, 32%);
+  }
+}
+
+hr {
+  height: 1px;
+  border-bottom: solid 1px;
+}
+
+h2, table td:nth-child(2) {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-family: "Young-Serif";
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table caption {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+table td {
+  border-bottom: solid hsl(30, 10%, 34%) 1px;
+}
+
+table td:nth-child(2) {
+  text-align: right;
+  font-family: unset;
+}
+
+/* Big screen */
+@media screen and (width >= 385px) {
+  .container {
+    border-radius: 10px;
+  }
+  table td:nth-child(2){
+    text-align: left;
+  }
+}
+
+  .attribution { 
+    font-size: 0.7rem; 
+    text-align: center;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
