@@ -92,7 +92,7 @@ table td:nth-child(2) {
 /* Big screen */
 @media screen and (width >= 385px) {
   body {
-    padding: 10vw 0;
+    padding: 12vw 0;
   }
   .container {
     border-radius: 10px;
