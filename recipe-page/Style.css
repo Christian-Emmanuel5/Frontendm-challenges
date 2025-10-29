@@ -2,7 +2,6 @@
   font-family: "Outfit";
   src: Local("Outfit"),
   url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
-  font-weight: 400;
 }
 @font-face {
   font-family: "Young-Serif";
@@ -16,7 +15,7 @@ box-sizing: border-box;
 border: 0;
 }
 
-body {
+html, body {
   background: hsl(30, 54%, 90%);
   width: 100vw;
   color: hsl(30, 10%, 34%);
@@ -25,14 +24,12 @@ body {
   font-family: "Outfit";
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container {
   width: clamp(320px, 100%, 600px);
   padding: 20px;
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
   gap: 15px;
   background: hsl(0, 0%, 100%);
 }
@@ -94,6 +91,9 @@ table td:nth-child(2) {
 
 /* Big screen */
 @media screen and (width >= 385px) {
+  body {
+    padding: 10vw 0;
+  }
   .container {
     border-radius: 10px;
   }
